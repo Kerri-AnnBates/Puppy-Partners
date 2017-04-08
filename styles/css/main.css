@@ -1,0 +1,545 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #0D1B1E;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/****************
+ HEADER
+*****************/
+.header-content {
+  border-bottom: 1px solid #F2F4FF;
+}
+
+#brand {
+  font-size: 3em;
+  float: left;
+  margin: 0;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+#brand span {
+  font-weight: 300;
+}
+
+svg {
+  width: 50px;
+  height: auto;
+}
+
+.nav-bar {
+  float: right;
+  margin: 0;
+}
+
+.nav-bar li {
+  border-left: 1px solid #F2F4FF;
+  float: left;
+  font-size: 1.1em;
+  list-style: none;
+  padding: 30px 0;
+}
+
+.nav-bar a {
+  color: #0D1B1E;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 30px 30px;
+  transition: all ease 1.2s;
+}
+
+.nav-bar a:hover {
+  background: #B2FFD6;
+  color: #4f4f4f;
+}
+
+#active {
+  background: #B2FFD6;
+}
+
+.header-intro {
+  background: #C492B1;
+  border-bottom: 5px solid #B2FFD6;
+  color: #FFF;
+  padding: 20px 0;
+}
+
+.header-intro h2 {
+  font-size: 2.2em;
+  font-weight: 300;
+  letter-spacing: 0.6em;
+  text-align: center;
+  margin: 0;
+}
+
+.header-intro p {
+  font-size: 1.2em;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+#mycrawler {
+  width: 100%;
+}
+
+/* hide hamburger menu on desktop veiw */
+.fa {
+  display: none;
+}
+
+#hamburger:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+/****************
+ MAIN
+*****************/
+main h3 {
+  color: #C492B1;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Home page */
+#displayCookie {
+  text-align: center;
+}
+
+.center-banner {
+  background-image: url("../../images/pawPattern.png");
+  height: 200px;
+  width: 100%;
+}
+
+#center-banner-text {
+  font-size: 2.8em;
+  font-weight: 700;
+  padding-top: 70px;
+  letter-spacing: .2em;
+  vertical-align: middle;
+  text-shadow: 4px 4px 2px #969696;
+}
+
+#gallery {
+  border-radius: 7px;
+  margin: 50px auto;
+}
+
+#pet-facts {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+#pet-facts img {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+  width: 400px;
+}
+
+#pet-facts p {
+  font-size: 1.125em;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.facts-content {
+  width: 30vw;
+  margin: 1vw;
+}
+
+/* about page */
+#mission-statement {
+  margin: 30px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mission-statement img {
+  border: 2px solid #B2FFD6;
+  padding: 5px;
+  width: 60%;
+}
+
+#mission-statement p {
+  font-weight: 300;
+  font-size: 1.225em;
+  line-height: 1.8em;
+  margin-left: 3vw;
+  padding-top: 70px;
+}
+
+section h3 {
+  margin: 40px 0;
+}
+
+#how-we-do {
+  font-size: 1.225em;
+  line-height: 1.6em;
+  margin: 0 5vw;
+}
+
+#stats p {
+  font-size: 1.5em;
+  padding: 100px 30px 0 30px;
+}
+
+#stats p:nth-child(3) {
+  padding: 25px;
+  font-size: 1.2em;
+}
+
+/* puupies page */
+.puppy-gallery {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+}
+
+.puppy-gallery li {
+  list-style: none;
+}
+
+.puppy-gallery .gallery-items {
+  min-width: 20em;
+  margin: 2em 1em;
+}
+
+.puppy-gallery img {
+  max-width: 24em;
+  width: 100%;
+}
+
+/* Tips page */
+.vet-info .care-box img {
+  float: right;
+}
+
+.care-box p {
+  padding-top: 5vh;
+  margin: 2vw;
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+.vet-info {
+  border: 1px solid #B2FFD6;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+#vet-tips {
+  margin-top: 50px;
+}
+
+table {
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+}
+
+table td, table th {
+  padding: 8px;
+}
+
+table tr:nth-child(odd) {
+  background: #ccc;
+}
+
+table tr:first-child {
+  background: #B2FFD6;
+}
+
+.training-tips {
+  border: 1px solid #B2FFD6;
+  border-radius: 3px;
+  margin-top: 50px;
+  height: 200px;
+}
+
+.training .row .col-md-4 {
+  padding: 10px;
+}
+
+.training-tips li {
+  font-size: 1.125em;
+}
+
+/* contact page */
+.contact-content {
+  border: 1px solid #B2FFD6;
+  margin-top: 50px;
+}
+
+.contact-content img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-notes {
+  font-size: 1.125em;
+  margin: 0 auto;
+  padding: 4vw 0;
+  width: 60vw;
+}
+
+.contact-notes span {
+  font-weight: 700;
+}
+
+form {
+  border: 1px solid #B2FFD6;
+  margin: 0 auto;
+  padding: 30px;
+  width: 500px;
+}
+
+form p {
+  color: red;
+}
+
+form input {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  margin: 10px 0;
+}
+
+form label {
+  margin-right: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #EEE1E9;
+  border: 1px solid #C492B1;
+  padding: 5px 20px;
+  transition: .3s ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #C492B1;
+}
+
+form .error {
+  color: red;
+  padding-left: 5px;
+}
+
+/****************
+ FOOTER
+*****************/
+footer {
+  background: #B2FFD6;
+  height: 100px;
+  margin-top: 25px;
+}
+
+footer ul {
+  float: right;
+}
+
+footer li {
+  list-style: none;
+  float: left;
+  padding-left: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0D1B1E;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  padding-top: 30px;
+}
+
+/****************
+ MEDIA QUERIES
+*****************/
+/* Keep nav bar displayed after it has been toggled */
+@media screen and (min-width: 1050px) {
+  .nav-bar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /*puppies gallery */
+  .puppy-gallery .gallery-items {
+    min-width: 30em;
+    margin: 2em 1em;
+  }
+  .puppy-gallery img {
+    max-width: 30em;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  /* home page */
+  #brand {
+    font-size: 4em;
+  }
+  .nav-bar, .nav-bar li {
+    float: none;
+  }
+  .nav-bar {
+    clear: both;
+    display: none;
+  }
+  header ul {
+    padding: 0;
+  }
+  .nav-bar li {
+    border-left: none;
+    border-bottom: 1px solid #F2F4FF;
+    padding: 0;
+  }
+  .nav-bar a {
+    display: block;
+    font-size: 1.235em;
+    padding: 10px;
+    text-align: center;
+  }
+  /* display hamburger */
+  .fa {
+    display: block;
+    font-size: 3em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 30px 10px 0 0;
+  }
+  /*End home page */
+  /* About page */
+  #image-stats img {
+    width: 100%;
+  }
+  #image-stats p {
+    text-align: center;
+    padding: 3vw 0;
+  }
+  /* End About page */
+}
+
+@media screen and (max-width: 993px) {
+  .header-intro h2 {
+    font-size: 1.9em;
+  }
+  /* puppy care page*/
+  table {
+    width: 100%;
+  }
+  /* puupies page */
+  .puppy-gallery .gallery-items {
+    min-width: 24em;
+    margin: 1vw 1.125vw;
+  }
+  .puppy-gallery img {
+    max-width: 24em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #brand {
+    font-size: 3em;
+  }
+  .header-intro h2 {
+    font-size: 1.7em;
+  }
+  #center-banner-text {
+    font-size: 2.5em;
+  }
+  .facts-content {
+    width: 100%;
+  }
+  .facts-content:nth-child(2) {
+    margin: 5vw 0;
+  }
+  #pet-facts {
+    display: block;
+  }
+  #pet-facts img {
+    width: 100%;
+  }
+  #pet-facts p {
+    font-size: 1.35em;
+  }
+  /* End home page */
+  /* About page */
+  #mission-statement {
+    display: block;
+  }
+  #mission-statement img {
+    margin: 0 auto;
+    width: 100%;
+  }
+  #mission-statement p {
+    margin: 0 3vw;
+  }
+  /*End about page */
+  /*puppies gallery */
+  .puppy-gallery .gallery-items {
+    max-width: 50em;
+    margin: 2.5vh auto;
+  }
+  .puppy-gallery img {
+    max-width: 50em;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  #brand {
+    border-bottom: 1px solid #C492B1;
+    float: none;
+    text-align: center;
+  }
+  .header-intro h2 {
+    font-size: 1.5em;
+  }
+  .fa {
+    display: none;
+  }
+  .nav-bar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #center-banner-text {
+    font-size: 2em;
+  }
+}
